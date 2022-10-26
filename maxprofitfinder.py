@@ -18,4 +18,3 @@ with colTax:
 tax_rate = tax_rate / 100.0
 salary_after_taxes = salary * (1 - tax_rate)
 monthly_takehome_salary = round(salary_after_taxes / 12.0, 2)
-view rawBudgetApp_part3.py hosted with ❤ by GitHub
