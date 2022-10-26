@@ -1,7 +1,7 @@
 
 import streamlit as st
 import numpy as np
-from tkinter import *
+import tkinter as tk
 window = Tk()
 
 
