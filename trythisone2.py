@@ -1,6 +1,5 @@
-from tkinter import *
-window = Tk()
-window.title("Calculator")
+
+import stramlit as st
 
 
 def mean():
@@ -27,7 +26,7 @@ def mode():
             modeNum = i
     FinNumber.set("Mode: " + str(modeNum))
 
-NumLabel = tkinter.Label(window, text = "Please input 10 numbers:")
+NumLabel = st.title(window, text = "Please input 10 numbers:")
 NumLabel.grid(row = 0, column = 0)
 
 N1 = StringVar()
