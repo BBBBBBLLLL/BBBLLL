@@ -1,6 +1,8 @@
-import streamlit as st
-import pandas as pd
-import numpy as np
+from tkinter import *
+window = Tk()
+window.title("Calculator")
+
+
 def mean():
     lyst = [eval(N1.get()), eval(N2.get()), eval(N3.get()), eval(N4.get()), eval(N5.get()), eval(N6.get()), eval(N7.get()), eval(N8.get()), eval(N9.get()), eval(N10.get())]
     meanNum = sum(lyst) / len(lyst)
@@ -25,7 +27,7 @@ def mode():
             modeNum = i
     FinNumber.set("Mode: " + str(modeNum))
 
-NumLabel = Label(window, text = "Please input 10 numbers:")
+NumLabel = tkinter.Label(window, text = "Please input 10 numbers:")
 NumLabel.grid(row = 0, column = 0)
 
 N1 = StringVar()
