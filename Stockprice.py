@@ -1,6 +1,6 @@
 
+pip install -i https://pypi.anaconda.org/ranaroussi/simple finance
 
-pip install yfinance
 import yfinance as yf
 import datetime
 import streamlit as st
