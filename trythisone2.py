@@ -1,5 +1,7 @@
 
 import stramlit as st
+import numpy as np
+
 
 
 def mean():
