@@ -1,8 +1,12 @@
+
+
+pip install yfinance
 import yfinance as yf
 import datetime
 import streamlit as st
 import plotly.graph_objects as go
 import pandas as pd
+
 
 
 class Stock:
