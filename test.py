@@ -1,6 +1,6 @@
 import streamlit as st 
-   st.title("Statistics Calculator") 
-   st.subheader("Please input 10 numbers: ") 
+st.title("Statistics Calculator") 
+st.subheader("Please input 10 numbers: ") 
  n1 = st.number_input("Please input 1st number: ") 
  n2 = st.number_input("Please input 2nd number: ") 
  n3 = st.number_input("Please input 3rd number: ") 
