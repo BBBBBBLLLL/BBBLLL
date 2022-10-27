@@ -38,3 +38,5 @@ elif st.button("Calculate Mode"):
    st.write("Mode: ", modeNum) 
 reset.button('New game', on_click=restart)
 
+if st.button("Clear All"):# Clears all singleton caches:
+  st.experimental_singleton.clear()
