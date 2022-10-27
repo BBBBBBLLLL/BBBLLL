@@ -5,30 +5,50 @@ st.title("Statistics Calculator")
 
 st.header("Please input 10 numbers: ") 
 
-NM1 = st.number_input("Please input 1st number: ") 
-NM2 = st.number_input("Please input 2nd number: ") 
-NM3 = st.number_input("Please input 3rd number: ") 
-NM4 = st.number_input("Please input 4th number: ") 
-NM5 = st.number_input("Please input 5th number: ") 
-NM6 = st.number_input("Please input 6th number: ") 
-NM7 = st.number_input("Please input 7th number: ") 
-NM8 = st.number_input("Please input 8th number: ") 
-NM9 = st.number_input("Please input 9th number: ") 
-NM10 = st.number_input("Please input 10th number: ") 
+NM1 = st.number_input("Enter the 1st number: ")
+#request number input
 
-lyst = [NM1, NM2,NM3, NM4, NM5, NM6, NM7, NM8, NM9, NM10] 
+NM2 = st.number_input("Enter the 2nd number: ") 
+#request number input
+
+NM3 = st.number_input("Enter the 3rd number: ") 
+#request number input
+
+NM4 = st.number_input("Enter the 4th number: ") 
+#request number input
+
+NM5 = st.number_input("Enter the 5th number: ") 
+#request number input
+
+NM6 = st.number_input("Enter the 6th number: ") 
+#request number input
+
+NM7 = st.number_input("Enter the 7th number: ")
+#request number input
+
+NM8 = st.number_input("Enter the 8th number: ") 
+#request number input
+
+NM9 = st.number_input("Enter the 9th number: ") 
+#request number input
+
+NM10 = st.number_input("Enter the 10th number: ") 
+#request number input
+Numbers = [NM1, NM2,NM3, 
+        NM4, NM5, NM6, 
+        NM7, NM8, NM9, NM10] 
 if st.button("Calculate Mean"): 
- meanNum = sum(lyst) / len(lyst) 
+ meanNum = sum(Numbers) / len(Numbers) 
  st.write("Mean: ", meanNum) 
 elif st.button("Calculate Median"): 
- lyst.sort() 
- m1 = lyst[len(lyst) // 2] 
- m2 = lyst[len(lyst) // 2 - 1] 
+ Numbers.sort() 
+ m1 = Numbers[len(Numbers) // 2] 
+ m2 = Numbers[len(Numbers) // 2 - 1] 
  medianNum = (m1 + m2) / 2 
  st.write("Median: ", medianNum) 
 elif st.button("Calculate Mode"): 
  frequency = {} 
- for i in lyst: 
+ for i in Numbers: 
   frequency.setdefault(i, 0) 
   frequency[i] += 1 
   frequent = max(frequency.values()) 
