@@ -24,10 +24,10 @@ elif st.button("Median"):
 elif st.button("Mode"): 
  frequency = {} 
  for i in lyst: 
- frequency.setdefault(i, 0) 
- frequency[i] += 1 
- frequent = max(frequency.values()) 
+  frequency.setdefault(i, 0) 
+  frequency[i] += 1 
+  frequent = max(frequency.values()) 
  for i, j in frequency.items(): 
- if j == frequent: 
- modeNum = i 
- st.write("Mode: ", modeNum) 
+  if j == frequent: 
+  modeNum = i 
+  st.write("Mode: ", modeNum) 
