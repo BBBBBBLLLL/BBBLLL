@@ -11,18 +11,18 @@ n7 = st.number_input("Please input 7th number: ")
 n8 = st.number_input("Please input 8th number: ") 
 n9 = st.number_input("Please input 9th number: ") 
 n10 = st.number_input("Please input 10th number: ") 
- lyst = [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10] 
-   if st.button("Mean"): 
- meanNum = sum(lyst) / len(lyst) 
- st.write("Mean: ", meanNum) 
- elif st.button("Median"): 
- lyst.sort() 
- m1 = lyst[len(lyst) // 2] 
- m2 = lyst[len(lyst) // 2 - 1] 
- medianNum = (m1 + m2) / 2 
- st.write("Median: ", medianNum) 
- elif st.button("Mode"): 
- frequency = {} 
+lyst = [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10] 
+if st.button("Mean"): 
+  meanNum = sum(lyst) / len(lyst) 
+  st.write("Mean: ", meanNum) 
+elif st.button("Median"): 
+  lyst.sort() 
+  m1 = lyst[len(lyst) // 2] 
+  m2 = lyst[len(lyst) // 2 - 1] 
+  medianNum = (m1 + m2) / 2 
+  st.write("Median: ", medianNum) 
+  elif st.button("Mode"): 
+  frequency = {} 
  for i in lyst: 
  frequency.setdefault(i, 0) 
  frequency[i] += 1 
