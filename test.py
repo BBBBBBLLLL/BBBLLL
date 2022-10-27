@@ -57,5 +57,5 @@ elif st.button("Calculate Mode"):
    modeNum = i 
    st.write("Mode: ", modeNum) 
 
-if st.button("Clear All"):# Clears all singleton caches:
+if st.button("Back"):# Clears all singleton caches:
   st.experimental_singleton.clear()
