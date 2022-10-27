@@ -15,7 +15,9 @@ def init(length: int = 100, post_init=False):
     st.session_state.tries = 0
     st.session_state.over = False
 def restart():
-    init(st.session_state.length,post_init=True),st.session_state.input+=1;
+    init(st.session_state.length, post_init=True)
+    st.session_state.input += 1
+
 
 def main():
     st.write(
