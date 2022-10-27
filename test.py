@@ -29,5 +29,5 @@ elif st.button("Mode"):
   frequent = max(frequency.values()) 
  for i, j in frequency.items(): 
   if j == frequent: 
-  modeNum = i 
-  st.write("Mode: ", modeNum) 
+   modeNum = i 
+   st.write("Mode: ", modeNum) 
