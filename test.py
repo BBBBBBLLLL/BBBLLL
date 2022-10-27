@@ -21,7 +21,7 @@ elif st.button("Median"):
  m2 = lyst[len(lyst) // 2 - 1] 
  medianNum = (m1 + m2) / 2 
  st.write("Median: ", medianNum) 
- elif st.button("Mode"): 
+elif st.button("Mode"): 
  frequency = {} 
  for i in lyst: 
  frequency.setdefault(i, 0) 
