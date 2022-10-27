@@ -1,5 +1,4 @@
 
-pip install -i https://pypi.anaconda.org/ranaroussi/simple finance
 
 import yfinance as yf
 import datetime
