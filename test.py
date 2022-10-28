@@ -1,9 +1,7 @@
 import streamlit as st 
-
-
 st.title("Statistics Calculator") 
 
-st.header("Please input 10 numbers: ") 
+st.header("Find your results by putting numbers in") 
 
 NM1 = st.number_input("Enter the 1st number: ")
 #request number input
