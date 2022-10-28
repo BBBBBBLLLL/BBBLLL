@@ -1,4 +1,5 @@
 import streamlit as st 
+import numpy as np
 st.title("Statistics Calculator") 
 
 st.header("Find your results by putting numbers in") 
