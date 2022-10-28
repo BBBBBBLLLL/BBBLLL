@@ -34,17 +34,23 @@ NM10 = st.number_input("Enter the 10th number: ")
 #request number input
 Numbers = [NM1, NM2,NM3, 
         NM4, NM5, NM6, 
-        NM7, NM8, NM9, NM10] 
-if st.button("Calculate Mean"): 
+        NM7, NM8, NM9, NM10]
+#Create the number list
+
+if st.button("Calculate Mean"): #set button
  meanNum = sum(Numbers) / len(Numbers) 
  st.write("Mean: ", meanNum) 
-elif st.button("Calculate Median"): 
+#Find the mean
+        
+elif st.button("Calculate Median"): #set button
  Numbers.sort() 
  m1 = Numbers[len(Numbers) // 2] 
  m2 = Numbers[len(Numbers) // 2 - 1] 
  medianNum = (m1 + m2) / 2 
  st.write("Median: ", medianNum) 
-elif st.button("Calculate Mode"): 
+#Find the meadina
+
+elif st.button("Calculate Mode"): #set button
  frequency = {} 
  for i in Numbers: 
   frequency.setdefault(i, 0) 
@@ -54,6 +60,7 @@ elif st.button("Calculate Mode"):
   if j == frequent: 
    modeNum = i 
    st.write("Mode: ", modeNum) 
+#Find the mode
 
-if st.button("Back"):# Clears all singleton caches:
+if st.button("Back"):# Clears all singleton caches: #set button
   st.experimental_singleton.clear()
